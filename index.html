@@ -13,7 +13,14 @@
         
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #4997d0 0%, #87ceeb 50%, #ffffff 100%);
+            /* FONDO CON COLORES DE LA BANDERA DE GUATEMALA */
+            background: linear-gradient(180deg, 
+                #4997d0 0%, 
+                #4997d0 33%, 
+                #ffffff 33%, 
+                #ffffff 66%, 
+                #4997d0 66%, 
+                #4997d0 100%);
             min-height: 100vh;
             padding: 20px;
         }
@@ -28,6 +35,9 @@
             color: white;
             margin-bottom: 40px;
             padding: 20px;
+            background: rgba(73, 151, 208, 0.8); /* Azul semitransparente */
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         
         header h1 {
@@ -55,15 +65,17 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             transition: transform 0.3s, box-shadow 0.3s;
             cursor: pointer;
+            border: 3px solid #4997d0; /* Borde azul Guatemala */
         }
         
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 40px rgba(73, 151, 208, 0.4);
+            border-color: #2874a6;
         }
         
         .card h2 {
-            color: #667eea;
+            color: #4997d0; /* Azul de Guatemala */
             font-size: 1.5rem;
             margin-bottom: 10px;
         }
@@ -76,7 +88,7 @@
         
         .btn {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #4997d0 0%, #2874a6 100%);
             color: white;
             padding: 12px 25px;
             border-radius: 25px;
@@ -87,25 +99,29 @@
         
         .btn:hover {
             opacity: 0.9;
+            background: linear-gradient(135deg, #2874a6 0%, #4997d0 100%);
         }
         
         footer {
             text-align: center;
-            color: white;
+            color: #2874a6;
             padding: 40px 20px;
             margin-top: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
         }
         
         footer p {
-            opacity: 0.8;
             font-size: 0.9rem;
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Historias y Leyendas de Guatemala</h1>
+            <h1>Las Historias y Leyendas de Guatemala</h1>
             <p>Descubre las fascinantes historias de nuestra tierra</p>
         </header>
         
@@ -117,7 +133,7 @@
             </div>
             
             <div class="card">
-                <h2>🪨 La Piedra De Los Compadres</h2>
+                <h2>La Piedra De Los Compadres</h2>
                 <p>Una historia de amistad y traición...</p>
                 <a href="La_Piedra_De_Los_Compadres.html" class="btn">Leer Historia</a>
             </div>
@@ -178,8 +194,8 @@
         </div>
         
         <footer>
-            <p>Leyendas de Guatemala - Tradición Oral</p>
-            <p>Proyecto: Historias y Leyendas de Guatemala</p>
+            <p><strong>Leyendas de Guatemala - Tradición Oral</strong></p>
+            <p>Proyecto: Historias y Leyendas de Guatemala 🇬🇹</p>
         </footer>
     </div>
 </body>
