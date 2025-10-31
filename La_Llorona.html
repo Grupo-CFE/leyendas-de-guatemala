@@ -33,6 +33,19 @@
             padding-bottom: 20px;
             border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         }
+        
+        /* NUEVO: Estilos para la imagen */
+        .header-image {
+            width: 100%;
+            max-width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(0, 212, 255, 0.5);
+        }
+        
         h1 {
             color: #00d4ff;
             font-size: 2.5em;
@@ -76,7 +89,9 @@
 <body>
     <div class="container">
         <div class="header">
-            <div class="icon">👻</div>
+            <!-- NUEVA LÍNEA: Imagen de la leyenda -->
+            <img src="Imagenes/llorona.jpg" alt="La Llorona" class="header-image">
+            
             <h1>La Llorona</h1>
             <p class="subtitle">El alma en pena que busca a sus hijos</p>
         </div>
