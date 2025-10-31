@@ -26,6 +26,7 @@
             padding: 40px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
             border: 1px solid rgba(255, 255, 255, 0.18);
+            overflow: hidden; /* NUEVO: Evita desbordamiento */
         }
         .header {
             text-align: center;
@@ -33,6 +34,23 @@
             padding-bottom: 20px;
             border-bottom: 2px solid rgba(255, 255, 255, 0.2);
         }
+        
+        /* ESTILOS CORREGIDOS PARA LA IMAGEN */
+        .header-image {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            border: 3px solid rgba(217, 70, 239, 0.5);
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
         h1 {
             color: #d946ef;
             font-size: 2.5em;
@@ -173,7 +191,7 @@
                     🙏 <strong>Llevar una cruz o medalla bendita</strong> al salir de noche
                     <br>📿 <strong>Rezar al encontrarse con una mujer solitaria</strong> en lugares apartados
                     <br>🚫 <strong>No seguir a mujeres desconocidas</strong> en la oscuridad
-                    <br>💒 <strong>Mantener la fidelidad</strong> en el matrimonio
+                    <br>💍 <strong>Mantener la fidelidad</strong> en el matrimonio
                     <br>🏠 <strong>No salir solo</strong> a altas horas de la noche
                 </p>
             </div>
